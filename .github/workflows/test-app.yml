@@ -21,4 +21,4 @@ jobs:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           AMAR_BASE_URL: ${{ secrets.AMAR_BASE_URL }}
-          CYPRESS_BASE_URL: 'http://localhost:5000/'
+          CYPRESS_BASE_URL: ${{ secrets.AMAR_BASE_URL }}
