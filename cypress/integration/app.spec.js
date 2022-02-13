@@ -40,7 +40,7 @@ describe('TodoMVC', function () {
     // which is automatically prepended to cy.visit
     //
     // https://on.cypress.io/api/visit
-    cy.visit(Cypress.env('AMAR_BASE_URL')[0])
+    cy.visit(Cypress.env('/'))
 
   })
 
@@ -92,8 +92,6 @@ describe('TodoMVC', function () {
       .type(TODO_ITEM_ONE)
       .type('{enter}')
 
-      cy.log("Amar ####################### Hello Amar #######################")
-
       // make sure the 1st label contains the 1st todo text
       cy.get('.todo-list li')
       .eq(0)
@@ -128,7 +126,6 @@ describe('TodoMVC', function () {
       .type(TODO_ITEM_ONE)
       .type('{enter}')
 
-      cy.log('Amar ####################### Hello Amar #######################')
       cy.get('.new-todo').should('have.text', '')
     })
 
