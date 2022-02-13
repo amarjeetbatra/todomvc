@@ -40,7 +40,7 @@ describe('TodoMVC', function () {
     // which is automatically prepended to cy.visit
     //
     // https://on.cypress.io/api/visit
-    cy.visit(Cypress.env('/'))
+    cy.visit('/')
 
   })
 
